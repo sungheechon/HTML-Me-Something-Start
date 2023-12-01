@@ -1,1 +1,143 @@
 /* Write your CSS here! */
+
+@font-face {
+    font-family: minlo;
+    font-weight: normal;
+    src: url(/fonts/Minlo-Regular.woff2);
+}
+
+@font-face {
+    font-family: minlo;
+    font-weight: bold;
+    src: url(/fonts/Minlo-Bold.woff2);
+}
+
+
+body {
+    font-family: minlo, monospace;
+    margin: 8px;
+    padding: 30px;
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+/* black line on top of the page */
+#barTop {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+/* black line on bottom of the page */
+#barBottom {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #909090;
+}
+
+h4 {
+    margin: 0px;
+}
+
+#mainHeading {
+    margin: 1px 0px;
+    color: red;
+}
+
+section {
+    margin: 0px;
+    padding-bottom: 40px;
+}
+
+#testP {
+    color: #d3d3d3;
+    margin-top: 0px;
+}
+
+.funParagraph {
+    color: green;
+    margin-top: 1px;
+    margin-bottom: 30px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: #909090;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+
+img {
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+footer {
+    color: #909090;
+    font-size: smaller;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#blink_text {
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: Infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
